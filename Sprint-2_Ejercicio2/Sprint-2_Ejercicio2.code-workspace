@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Sprint-2_Ejercicio2",
+			"path": "."
+		},
+		{
+			"name": "Imagenes",
+			"path": "../Sprint-2_Ex1/Imagenes"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Sprint-2_Ejercicio2"
+	}
+}

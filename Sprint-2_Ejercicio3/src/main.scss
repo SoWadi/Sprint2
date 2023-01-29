@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-content: space-around;
+}
+
+$theme-colors: ("primary": #5265E1,
+    "secondary": #FA5959,
+    "info": grey,
+);
+
+header {
+    min-height: 20vh;
+}
+
+.navbar-light .navbar-brand {
+    color: aliceblue;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.navbar-nav>li {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 1rem;
+    border-bottom: none;
+}
+.navbar-nav>li:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 1rem;
+    border-bottom: 3px solid #FA5959;
+}
+
+.navbar-nav>li:active {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 1rem;
+    border-bottom: 3px solid #FA5959;
+}
+
+.navbarBlock {
+    padding-bottom: 16rem;
+    margin-bottom: 16em;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    main .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+#go2 {
+    width: auto;
+    color: black;
+}
+
+#go {
+    width: auto;
+    color: aliceblue;
+}
+
+.rectangulo2 {
+    height: 50vh;
+    background: #4a6ee4;
+    border-radius: 250px 0 0 250px;
+    position: absolute;
+    float: inherit;
+    margin-left: -20%;
+    margin-top: 5%;
+    z-index: -1;
+}
+
+.rectangulo {
+    height: 50vh;
+    background: #4a6ee4;
+    border-radius: 0 250px 250px 0;
+    position: absolute;
+    float: inherit;
+    margin-left: -20%;
+    margin-top: 5%;
+    z-index: -1;
+}
+
+.nav-item {
+    border-bottom: 2px solid rgb(229, 229, 229);
+    justify-content: space-evenly;
+}
+
+.nav-item a {
+    background: none;
+    color: #000;
+}
+
+.tab a:hover {
+    border-radius: 0%;
+    border-bottom: 2px solid #FA5959;
+}
+
+.tab a:active {
+    border-radius: 0%;
+    background: none;
+}
+
+
+/****************************************************************** 
+ *------------------------ EJERCICIO 3 ---------------------------*
+******************************************************************/
+.card {
+    width: 25%;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";

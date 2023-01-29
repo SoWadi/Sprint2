@@ -1,0 +1,49 @@
+$primary: #5265E1;
+// $secondary: #FA5959;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $primary;
+}
+
+
+.rectangulo {
+    // width: 50vw;
+    height: 50%;
+    background: #4a6ee4;
+    border-radius: 0 250px  250px 0;
+    
+    position:absolute;
+    float:inherit;
+    margin-left: -20%;
+    margin-top: 5%;
+    z-index: -1;
+
+}
+
+.nav-item {
+    border-bottom: 2px solid rgb(229, 229, 229);
+    justify-content: space-evenly;
+}
+.nav-item a {
+    background: none;
+    color: #000;
+
+} 
+.nav-item a:hover{
+    border-radius: 0%;
+    border-bottom: 2px solid #FA5959;
+}
+
+.nav-item a:active{
+    border-radius: 0%;
+    // border-bottom: 15px solid #782222;
+    background: none;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
