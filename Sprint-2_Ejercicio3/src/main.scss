@@ -1,27 +1,30 @@
+$primary: #5265E1;
+$secondary:  #FA5959;
+$info : grey;
+
+
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    align-content: space-around;
+    background: $primary;
 }
 
-$theme-colors: ("primary": #5265E1,
-    "secondary": #FA5959,
-    "info": grey,
-);
 
 header {
     min-height: 20vh;
 }
 
+
 .navbar-light .navbar-brand {
     color: aliceblue;
     font-size: 30px;
-    overflow: hidden;
+    overflow:hidden;
+
 }
 
 .navbar-nav>li {
@@ -30,26 +33,80 @@ header {
     margin: 1rem;
     border-bottom: none;
 }
-.navbar-nav>li:hover {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 1rem;
-    border-bottom: 3px solid #FA5959;
-}
 
-.navbar-nav>li:active {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 1rem;
-    border-bottom: 3px solid #FA5959;
-}
 
 .navbarBlock {
     padding-bottom: 16rem;
     margin-bottom: 16em;
 }
 
-@media only screen and (max-width: 600px) {
+
+.nav-item {
+    border-bottom: 2px solid rgb(229, 229, 229);
+    justify-content: space-evenly;
+}
+
+
+
+#go2 {
+    width: auto;
+    color:black;
+}
+
+#go {
+    width: auto;
+    color: aliceblue;
+}
+
+.rectangulo {
+    height: 55vw;
+    background: #4a6ee4;
+    border-radius: 250px 0 0 250px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 5em;
+    margin-left: 4rem;
+}
+
+
+.rectangulo2 {
+    height: 66vw;
+    background: #4a6ee4;
+    border-radius: 0 250px 250px 0;
+    position: absolute;
+    z-index: -1;
+/*     margin-top: 5em; */
+    margin-right: 10rem;
+    margin-left: -150px;
+}
+
+
+.nav-item {
+    border-bottom: 2px solid rgb(229, 229, 229);
+    justify-content: space-evenly;
+}
+
+
+
+section>img {
+    width: 100vw;
+}
+/****************************************************************** 
+ *------------------------ EJERCICIO 3 ---------------------------*
+******************************************************************/
+button.accordion-button {
+    border-top: 1px solid rgb(165, 165, 164);
+}
+
+.accordion:first-child {
+    border-top: 1px solid rgb(165, 165, 164);
+}
+
+.accordion:last-child {
+    border-bottom: 1.5px solid rgb(165, 165, 164);
+}
+
+@media only screen and (min-width: 600px) {
     .navbar-collapse {
         background: rgba(255, 255, 255, 0.5);
     }
@@ -58,66 +115,34 @@ header {
         display: flex;
         flex-direction: column-reverse;
     }
-}
 
-#go2 {
-    width: auto;
-    color: black;
-}
+    .cardsTogether {
+        height: 600px;
+    }
 
-#go {
-    width: auto;
-    color: aliceblue;
-}
+    .cardsTogether>.card {
+        width: 25%;
+        padding: 2%;
+    }
 
-.rectangulo2 {
-    height: 50vh;
-    background: #4a6ee4;
-    border-radius: 250px 0 0 250px;
-    position: absolute;
-    float: inherit;
-    margin-left: -20%;
-    margin-top: 5%;
-    z-index: -1;
-}
+    .rectangulo {
+        height: 25vw;
+    }
 
-.rectangulo {
-    height: 50vh;
-    background: #4a6ee4;
-    border-radius: 0 250px 250px 0;
-    position: absolute;
-    float: inherit;
-    margin-left: -20%;
-    margin-top: 5%;
-    z-index: -1;
-}
 
-.nav-item {
-    border-bottom: 2px solid rgb(229, 229, 229);
-    justify-content: space-evenly;
-}
+    .rectangulo2 {
+        height: 25vw;
+        margin: 124px 0 auto -300px;
+    }
 
-.nav-item a {
-    background: none;
-    color: #000;
-}
+    section img {
+        width: auto;
+        height: auto;
+    }
 
-.tab a:hover {
-    border-radius: 0%;
-    border-bottom: 2px solid #FA5959;
-}
-
-.tab a:active {
-    border-radius: 0%;
-    background: none;
 }
 
 
-/****************************************************************** 
- *------------------------ EJERCICIO 3 ---------------------------*
-******************************************************************/
-.card {
-    width: 25%;
-}
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";

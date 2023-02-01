@@ -1,6 +1,6 @@
 $primary: #5265E1;
-// $secondary: #FA5959;
-
+$secondary:  #FA5959;
+$info : grey;
 * {
     margin: 0;
     padding: 0;
@@ -12,38 +12,93 @@ body {
 }
 
 
-.rectangulo {
-    // width: 50vw;
-    height: 50%;
-    background: #4a6ee4;
-    border-radius: 0 250px  250px 0;
-    
-    position:absolute;
-    float:inherit;
-    margin-left: -20%;
-    margin-top: 5%;
-    z-index: -1;
+header {
+    min-height: 20vh;
+}
+
+
+.navbar-light .navbar-brand {
+    color: aliceblue;
+    font-size: 30px;
+    overflow:hidden;
 
 }
+
+.navbar-nav>li {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bg-dark {
+    background-color: rgb(255, 255, 255, 0.5) !important;
+}
+
+
+
+#go2 {
+    width: auto;
+    color:black;
+}
+
+#go {
+    width: auto;
+    color: aliceblue;
+}
+
+.rectangulo {
+    height: 55vw;
+    background: #4a6ee4;
+    border-radius: 250px 0 0 250px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 5em;
+    margin-left: 4rem;
+}
+
+
+.rectangulo2 {
+    height: 56vw;
+    background: #4a6ee4;
+    border-radius: 0 250px 250px 0;
+    position: absolute;
+    z-index: -1;
+/*     margin-top: 5em;
+ */    margin-right: 10rem;
+    margin-left: -150px;
+}
+
 
 .nav-item {
     border-bottom: 2px solid rgb(229, 229, 229);
     justify-content: space-evenly;
 }
-.nav-item a {
-    background: none;
-    color: #000;
 
-} 
-.nav-item a:hover{
-    border-radius: 0%;
-    border-bottom: 2px solid #FA5959;
+
+
+section>img {
+    width: 100vw;
 }
 
-.nav-item a:active{
-    border-radius: 0%;
-    // border-bottom: 15px solid #782222;
-    background: none;
+
+@media only screen and (min-width: 600px) {
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    main .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .rectangulo {
+        height: 25vw;
+    }
+
+
+    .rectangulo2 {
+        height: 25vw;
+        // margin: auto 0 auto 0;
+    }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

@@ -8,9 +8,7 @@
     <title>Sprint 2 - Ejercicio 4</title>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="/src/main.css">
 
 
@@ -93,13 +91,13 @@
 
 
 
-    <!-- ****************************** EJERCICIO 2 ****************************** -->
+          <!-- ****************************** EJERCICIO 2 ****************************** -->
 
     <!-------------------- PARTE SUPERIOR -------------------- -->
 
     <div class="container d-flex justify-content-center">
         <div class="row col-12 col-lg-6">
-            <div class="mt-4 m-auto">
+            <div class="mt-4 mb-5">
                 <h1 class="text-center">Features</h1>
                 <p class="text-center">
                     Our aim is to make it quick and easy for vou to access your
@@ -116,84 +114,75 @@
     <div class="container">
 
         <!-- Nav pills -->
-        <ul class="col-6 col-lg-12 nav nav-fill m-auto bg-transparent text-bg-dark" role="tablist">
+        <ul class="col-6 col-lg-12 nav nav-fill m-auto" role="tablist">
             <li class="nav-item tab">
-                <a class="nav-link fw-semibold text-info
-                    text-secondary" data-bs-toggle="pill" href="#home">Simple bookmarking</a>
+                <a class="nav-link fw-semibold text-info navLinkTab show active" data-bs-toggle="pill" href="#home">Simple bookmarking</a>
             </li>
             <li class="nav-item tab">
-                <a class="nav-link fw-semibold text-info" data-bs-toggle="pill" href="#menu1">Speedy Searching</a>
+                <a class="nav-link fw-semibold text-info navLinkTab" data-bs-toggle="pill" href="#menu1">Speedy Searching</a>
             </li>
             <li class="nav-item tab">
-                <a class="nav-link fw-semibold text-info" data-bs-toggle="pill" href="#menu2">Easy Sharing</a>
+                <a class="nav-link fw-semibold text-info navLinkTab" data-bs-toggle="pill" href="#menu2">Easy Sharing</a>
             </li>
         </ul>
 
 
-
-
     </div>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6 d-flex justify-content-center flex-column-reverse flex-lg-row mt-5 gap-3">
+    <div class="container-fluid">
 
-                <!-- <img class="img-fluid" src="./Imagenes/illustration-features-tab-1.svg" alt="BG izq"> -->
-                <div class="col-12 col-lg-6 rectangulo2">
+
+        <!-- -------------------- Tab panes -------------------- -->
+
+        <div class="col-12 col-lg-6 d-flex justify-content-center flex-column-reverse flex-lg-row gap-3 mt-5">
+            <div class="col-12 col-lg-6 rectangulo2"></div>
+
+            <div
+                class="tab-content col-12 col-lg-10 text-center text-lg-start d-flex justify-content-center flex-column flex-lg-row-reverse">
+
+                <div id="home" class="container tab-pane fade show active gap-5"><br>
+                    <section class="d-flex align-items-center flex-column flex-lg-row gap-5">
+                        <img src="./Imagenes/illustration-features-tab-1.svg" alt="">
+                        <article class="col-12 col-lg-12 mt-5">
+                            <h3 class="mt-5">Bookmark in one click</h3>
+                            <p class="fw-light">Organize your bookmarks however you like. Our
+                                simple drag-and-drop interface gives you complete
+                                control over now ou manage your favourite sites.
+                            </p>
+                        </article>
+                    </section>
                 </div>
-            </div>
-
-
-            <!-- -------------------- Tab panes -------------------- -->
-            <div class="row">
-                <div
-                    class="tab-content col-12 col-lg-12 text-center text-lg-start d-flex justify-content-center flex-column flex-lg-row-reverse">
-
-                    <div id="home" class="container tab-pane active "><br>
-                        <section class="d-flex align-items-center flex-column flex-lg-row gap-5">
-                            <img src="./Imagenes/illustration-features-tab-1.svg" alt="">
-                            <article>
-                                <h3>Bookmark in one click</h3>
-                                <p class="fw-light">Organize your bookmarks however you like. Our
-                                    simple drag-and-drop interface gives you complete
-                                    control over now ou manage your favourite sites.
-                                </p>
-                            </article>
-                        </section>
-                    </div>
-                    <div id="menu1" class="container tab-pane fade"><br>
-                        <section class="d-flex align-items-center flex-column flex-lg-row  gap-5">
-                            <img src="./Imagenes/illustration-features-tab-2.svg" alt="">
-                            <article>
-                                <h3>Speedy Searching_TAB#2</h3>
-                                <p class="fw-light">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                    nisi
-                                    ut
-                                    aliquip ex ea commodo
-                                    consequat.
-                                </p>
-                            </article>
-                        </section>
-                    </div>
-                    <div id="menu2" class="container tab-pane fade"><br>
-                        <section class="d-flex align-items-center flex-column flex-lg-row  gap-5">
-                            <img src="./Imagenes/illustration-features-tab-3.svg" alt="">
-                            <article>
-                                <h3>Easy Sharing_TAB#3</h3>
-                                <p class="fw-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                    accusantium
-                                    doloremque laudantium,
-                                    totam rem aperiam.
-                                </p>
-                            </article>
-                        </section>
-                    </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                    <section class="d-flex align-items-center flex-column flex-lg-row  gap-5">
+                        <img src="./Imagenes/illustration-features-tab-2.svg" alt="">
+                        <article class="col-12 col-lg-12">
+                            <h3>Speedy Searching_TAB#2</h3>
+                            <p class="fw-light">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi
+                                ut
+                                aliquip ex ea commodo
+                                consequat.
+                            </p>
+                        </article>
+                    </section>
+                </div>
+                <div id="menu2" class="container tab-pane fade"><br>
+                    <section class="d-flex align-items-center flex-column flex-lg-row  gap-5">
+                        <img src="./Imagenes/illustration-features-tab-3.svg" alt="">
+                        <article class="col-12 col-lg-12">
+                            <h3>Easy Sharing_TAB#3</h3>
+                            <p class="fw-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium
+                                doloremque laudantium,
+                                totam rem aperiam.
+                            </p>
+                        </article>
+                    </section>
                 </div>
             </div>
         </div>
     </div>
-
 
 
     <!-- ****************************** EJERCICIO 3 ****************************** -->

@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    overflow-x: hidden;
+}
+
+$theme-colors: ("primary": #5265E1,
+    "secondary": #FA5959,
+    "info": grey,
+    "success": #232a5a,
+);
+
+
+
+header {
+    min-height: 20vh;
+}
+
+.navbar-light .navbar-brand {
+    color: aliceblue;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.navbar-nav>li {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 1rem;
+    border-bottom: none;
+}
+
+.navbar-nav>li:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 1rem;
+    border-bottom: 3px solid #FA5959;
+}
+
+.navbar-nav>li:active {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 1rem;
+    border-bottom: 3px solid #FA5959;
+}
+
+.navbarBlock {
+    padding-bottom: 16rem;
+    margin-bottom: 16em;
+}
+
+
+#go2 {
+    width: auto;
+    color: black;
+}
+
+#go {
+    width: auto;
+    color: aliceblue;
+}
+
+.rectangulo {
+    height: 55vw;
+    background: #4a6ee4;
+    border-radius: 250px 0 0 250px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 5em;
+    margin-left: 4rem;
+}
+
+
+.rectangulo2 {
+    height: 66vw;
+    background: #4a6ee4;
+    border-radius: 0 250px 250px 0;
+    position: absolute;
+    z-index: -1;
+/*     margin-top: 5em; */
+    margin-right: 10rem;
+    margin-left: -150px;
+}
+
+.nav-item {
+    border-bottom: 2px solid rgb(229, 229, 229);
+    justify-content: space-evenly;
+}
+
+.nav-item a {
+    background: none;
+    color: #000;
+}
+
+.tab a:hover {
+    border-radius: 0%;
+    border-bottom: 2px solid #FA5959;
+}
+
+.tab a:active {
+    border-radius: 0%;
+    background: none;
+
+}
+
+
+
+section>img {
+    width: 100vw;
+}
+
+/****************************************************************** 
+ *------------------------ EJERCICIO 3 ---------------------------*
+******************************************************************/
+
+
+
+button.accordion-button {
+    border-top: 1px solid rgb(165, 165, 164);
+}
+
+.accordion:first-child {
+    border-top: 1px solid rgb(165, 165, 164);
+}
+
+.accordion:last-child {
+    border-bottom: 1px solid rgb(165, 165, 164);
+}
+
+
+
+/****************************************************************** 
+                     *------------------------ EJERCICIO 5 ---------------------------*
+                    ******************************************************************/
+
+.spaceH6 {
+    letter-spacing: 2px;
+}
+
+form input,
+form button {
+    height: 3rem;
+    width: 12rem;
+}
+
+//------------------------ EJERCICIO 5 ---------------------------*
+
+/****************************************************************** 
+ *------------------------ MEDIA QUERY ---------------------------*
+******************************************************************/
+
+
+@media (min-width: 600px) {
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    main .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .cardsTogether {
+        height: 600px;
+    }
+
+    .cardsTogether>.card {
+        width: 25%;
+        padding: 2%;
+    }
+
+    .rectangulo {
+        height: 25vw;
+    }
+
+
+    .rectangulo2 {
+        height: 25vw;
+
+    }
+
+
+    section img {
+        width: auto;
+        height: auto;
+    }
+
+    footer {
+        width: auto;
+    }
+}
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
