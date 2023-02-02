@@ -10700,7 +10700,7 @@ i {
 /****************************************************************** 
  *------------------------ EJERCICIO 6 ---------------------------*
 ******************************************************************/
-a.navLinkTab:focus {
+.navLinkTab:focus {
   border-bottom: 3px solid #FA5959;
   color: grey;
 }
@@ -10715,11 +10715,12 @@ button.accordion-button:focus {
   border: none;
 }
 
-.accordion-button::after {
-  background: none;
-  color: #FA5959;
-}
-
+/* .accordion-button::before {
+    color: #FA5959;
+    } */
+/* .accordion-button::after {
+color: #FA5959;
+} */
 .loginBtn, .contactUs {
   color: aliceblue;
 }

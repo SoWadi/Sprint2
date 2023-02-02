@@ -58,35 +58,35 @@
     </header>
     <main class="container d-flex justify-content-around mt-0 mb-5">
         <!-- <div class="container "> -->
-            <div class="row d-flex flex-column-reverse flex-lg-row ">
-                <div class=" d-flex flex-column justify-content-center col-12 col-lg-6 mt-5 ">
-                    <h1 class="text-center text-lg-start pb-3">
-                        A Simple Bookmark Manager
-                    </h1>
-                    <p class="text-center text-lg-start pb-3 fw-light">
-                        A clean and simple interface to organize your favourite
-                        websites. Open a new browser fan and sep vour sites load
-                        instantiv. Try it for fres
-                    </p>
-                    <div class="d-flex justify-content-center justify-content-lg-start bouton">
-                        <a href="#" id="go" class="btn m-2 shadow">Get it on Chrome</a>
-                        <a href="#" id="go2" class="btn bg-light m-2 shadow">Get it on Firefox</a>
-                    </div>
+        <div class="row d-flex flex-column-reverse flex-lg-row ">
+            <div class=" d-flex flex-column justify-content-center col-12 col-lg-6 mt-5 ">
+                <h1 class="text-center text-lg-start pb-3">
+                    A Simple Bookmark Manager
+                </h1>
+                <p class="text-center text-lg-start pb-3 fw-light">
+                    A clean and simple interface to organize your favourite
+                    websites. Open a new browser fan and sep vour sites load
+                    instantiv. Try it for fres
+                </p>
+                <div class="d-flex justify-content-center justify-content-lg-start bouton">
+                    <a href="#" id="go" class="btn m-2 shadow">Get it on Chrome</a>
+                    <a href="#" id="go2" class="btn bg-light m-2 shadow">Get it on Firefox</a>
                 </div>
-                <div class="d-flex col-12 col-lg-6">
-                    <img src="./Imagenes/illustration-hero.svg" class="img-fluid" alt="BG derecha">
-                    <div class="col-12 col-lg-6 rectangulo">
-                    </div>
-                </div>
-
-
             </div>
+            <div class="d-flex col-12 col-lg-6">
+                <img src="./Imagenes/illustration-hero.svg" class="img-fluid" alt="BG derecha">
+                <div class="col-12 col-lg-6 rectangulo">
+                </div>
+            </div>
+
+
+        </div>
         <!-- </div> -->
     </main>
 
 
     <!-- bootstrap 5 js -->
- 
+
 
 
 
@@ -111,27 +111,28 @@
     <!---------------------- Nav pills ---------------------->
 
     <div class="container">
-
-        <!-- Nav pills -->
-        <ul class="col-6 col-lg-12 nav nav-fill m-auto" role="tablist">
-            <li class="nav-item tab">
-                <a class="nav-link fw-semibold navLinkTab show active" data-bs-toggle="pill" href="#home">Simple bookmarking</a>
-            </li>
-            <li class="nav-item tab">
-                <a class="nav-link fw-semibold navLinkTab" data-bs-toggle="pill" href="#menu1">Speedy Searching</a>
-            </li>
-            <li class="nav-item tab">
-                <a class="nav-link fw-semibold navLinkTab" data-bs-toggle="pill" href="#menu2">Easy Sharing</a>
-            </li>
-        </ul>
-
+        <div class="row">
+            <!-- Nav pills -->
+            <ul class="col-6 col-lg-12 nav nav-fill m-auto" role="tablist">
+                <li class="nav-item tab">
+                    <a class="nav-link fw-semibold navLinkTab show active" data-bs-toggle="pill" href="#home">Simple
+                        bookmarking</a>
+                </li>
+                <li class="nav-item tab">
+                    <a class="nav-link fw-semibold navLinkTab" data-bs-toggle="pill" href="#menu1">Speedy Searching</a>
+                </li>
+                <li class="nav-item tab">
+                    <a class="nav-link fw-semibold navLinkTab" data-bs-toggle="pill" href="#menu2">Easy Sharing</a>
+                </li>
+            </ul>
+        </div>
 
     </div>
 
 
     <div class="container-fluid">
 
-
+        <div class="row">
         <!-- -------------------- Tab panes -------------------- -->
 
         <div class="col-12 col-lg-6 d-flex justify-content-center flex-column-reverse flex-lg-row gap-3 mt-5">
@@ -181,6 +182,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 
@@ -358,7 +360,7 @@
     <footer>
         <div
             class="container-fluid bg-primary d-flex flex-column flex-wrap flex-lg-column mt-5 flex-column justify-content-center text-white text-center">
-
+<div class="row">
             <h6 class="m-5 spaceH6">35,000 ALREADY JOINED</h4>
                 <h1 class="col-6 m-auto">Stay up-to-date with what we're doing</h1>
                 <form
@@ -372,21 +374,18 @@
 
 
                 </form>
+            </div>  
         </div>
 
         <!----------------------------- navbar FOOTER ------------------------------->
 
-        <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-success">
-            <div class="container-fluid col-lg-12 d-flex justify-content-center align-items-center">
+
+            <div class="container-fluid bg-success">
+                <div class="row d-flex flex-column flex-lg-row m-auto">
+                    <nav class="navbar navbar-default navbar-expand-lg navbar-light ">
                 <a class="navbar-brand m-auto" href="#">
                     <img src="/dist/Imagenes/logo-bookmarkWhite.png" height="24">
                 </a>
-                <!-- 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
                 <div class="collapse navbar-collapse bg-success d-flex flex-column flex-lg-row justify-content-around"
                     id="navbarSupportedContent">
                     <ul class="navbar-nav text-center">
@@ -406,10 +405,12 @@
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
+            </nav>
+                </div>
             </div>
 
 
-        </nav>
+
 
     </footer>
 
